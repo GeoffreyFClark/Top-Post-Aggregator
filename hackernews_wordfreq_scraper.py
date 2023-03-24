@@ -64,11 +64,11 @@ for url in urls:
     # Convert the dictionary to a pandas dataframe
     df = pd.DataFrame.from_dict(word_freq, orient='index', columns=['frequency'])
 
-    # Add the "name" column to the dataframe
-    df['name'] = df.index
+    # Add the "word" column to the dataframe
+    df['word'] = df.index
 
     # Set the order of the columns in the dataframe
-    df = df[['name', 'frequency']]
+    df = df[['word', 'frequency']]
 
     # Append the dataframe to the list of dataframes
     dfs.append(df)
@@ -77,7 +77,7 @@ for url in urls:
 result = pd.concat(dfs, ignore_index=True)
 
 # Group the dataframe by the word and sum the frequency
-result = result.groupby('name')['frequency'].sum().reset_index()
+result = result.groupby('word')['frequency'].sum().reset_index()
 
 # Sort the dataframe by frequency in descending order
 result = result.sort_values('frequency', ascending=False)
