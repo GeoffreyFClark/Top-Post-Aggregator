@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 # Set the URL of the Stack Overflow "Top Questions of the Week" page
-url = 'https://stackoverflow.com/?tab=week'
+url = 'https://stackoverflow.com/?tab=month'
 
 # Send a GET request to the URL and parse the response using BeautifulSoup
 response = requests.get(url)
@@ -39,8 +39,14 @@ for word in words:
 # Convert the dictionary to a pandas dataframe
 df = pd.DataFrame.from_dict(word_freq, orient='index', columns=['frequency'])
 
+# Add the "name" column to the dataframe
+df['name'] = df.index
+
+# Set the order of the columns in the dataframe
+df = df[['name', 'frequency']]
+
 # Sort the dataframe by frequency in descending order
 df = df.sort_values('frequency', ascending=False)
 
 # Save the dataframe to a CSV file
-df.to_csv('stackoverflow_word_freq.csv')
+df.to_csv('stackoverflow_word_freq.csv', index=False)
