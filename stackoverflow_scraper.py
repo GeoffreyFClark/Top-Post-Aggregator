@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 # Set the URL of the Stack Overflow "Top Questions of the Week" page
-url = 'https://stackoverflow.com/?tab=month'
+url = 'https://stackoverflow.com/?tab=week'
 
 # Send a GET request to the URL and parse the response using BeautifulSoup
 response = requests.get(url)
