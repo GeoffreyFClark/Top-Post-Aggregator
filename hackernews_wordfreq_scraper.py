@@ -37,10 +37,10 @@ for url in urls:
     # Find all the top post titles on the page
     links = soup.select('.titleline a')
 
-    # Initialize an empty list to store all the question titles
+    # Initialize an empty list to store all the titles
     all_titles = []
 
-    # Loop through all the links and extract the question titles
+    # Loop through all the links and extract the titles
     for link in links:
         all_titles.append(link.text)
 
