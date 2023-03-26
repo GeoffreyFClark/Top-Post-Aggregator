@@ -61,7 +61,7 @@ for url in urls:
     dfs.append(df)
 
     # Add a delay before making the next request
-    time.sleep(5)
+    time.sleep(4)
 
 # Concatenate all the dataframes into a single dataframe
 result = pd.concat(dfs, ignore_index=True)
