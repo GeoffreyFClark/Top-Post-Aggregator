@@ -6,6 +6,8 @@ from datetime import datetime, timedelta
 # Initialize empty list of URLs to scrape
 urls = []
 
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'}
+
 # Set the time window for the last 7 days
 time_window = datetime.now() - timedelta(days=6)
 
@@ -23,19 +25,17 @@ for i in range(7):
 for date in dates:
     urls += [f'https://news.ycombinator.com/front?day={date}']
 
-print(urls)
-
 # Initialize an empty list to store the dataframes
 dfs = []
 
 # Loop through all the URLs and scrape the data
 for url in urls:
     # Send a GET request to the URL and parse the response using BeautifulSoup
-    response = requests.get(url)
+    response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, 'html.parser')
 
     # Find all the top post titles on the page
-    links = soup.select('.titleline a')[0:]
+    links = soup.select('.titleline a')
 
     # Initialize an empty list to store all the question titles
     all_titles = []
@@ -72,6 +72,9 @@ for url in urls:
 
     # Append the dataframe to the list of dataframes
     dfs.append(df)
+
+    # Add a delay before making the next request
+    time.sleep(5)
 
 # Concatenate all the dataframes into a single dataframe
 result = pd.concat(dfs, ignore_index=True)
