@@ -5,7 +5,7 @@ Read not only titles and OP, but also ALL comments in a subreddit over time.
 AI/ML to summarize overarching trends on Reddit + report HOT-TREND headlines to humans. 
 
 ## UseCase Example: 
-I bought a new macbook, they are #1 for gaming, but they are absolutely excellent for productivity and creativity.
+I bought a new macbook, they are not #1 for gaming, but they are absolutely excellent for productivity and creativity.
 I also simply found it to have the most upbeat environment of the top 3 operating systems.
 Anyway, upon receiving it from Amazon, I immediately installed the newest macOS **Ventura** 13.X from macOS **Monterey** 12.X.
 Then I read up on the mac subreddit on how to optimally utilize my new 2022 M2 Macbook Air.
