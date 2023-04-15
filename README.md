@@ -1,6 +1,7 @@
 # TODO:
 
-Read not only titles and OP, but also ALL comments in a subreddit over time. AI/ML to understand overarching trends on Reddit + report HOT-TREND headlines to humans. 
+Read not only titles and OP, but also ALL comments in a subreddit over time. 
+AI/ML to understand overarching trends on Reddit + report HOT-TREND headlines to humans. 
 
 ## UseCase Example: 
 I bought a new macbook, they are #1 for gaming, but they are absolutely excellent for productivity and creativity.
