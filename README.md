@@ -2,6 +2,8 @@
 
 Read not only titles and OP, but also ALL comments in a subreddit over time. 
 
+Automate the screening of filler words such as "the" and "a".
+
 AI/ML to summarize overarching trends on Reddit + report HOT-TREND headlines to humans. 
 
 ## UseCase Example: 
