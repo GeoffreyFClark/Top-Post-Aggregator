@@ -12,9 +12,9 @@ I also simply found it to have the most upbeat environment of the top 3 operatin
 Anyway, upon receiving it from Amazon, I immediately upgraded to the newest macOS **Ventura** 13.X from macOS **Monterey** 12.X.
 Then I read up on the mac subreddit on how to optimally utilize my new 2022 M2 Macbook Air.
 **The comments on reddit are mostly that Ventura is a s#^tshow.**
-I wish that I'd known that before "upgrading" lol.
-*Cue helpful AI buddy.
-(That being said, I'm not futzing about the Ventura 13.0 too much, and I'm still extremely pleased with Apple regarding this product.)
+I wish that I'd known that before "upgrading" the OS lol.
+*Cue helpful AI buddy.*
+(That being said, I'm not futzing about the Ventura 13.X too much, and am still extremely pleased with Apple regarding this product.)
 
 An AI text scanner that could continuously scan the comments of reddit... and concisely report trends that may interest the user (AKA personalized) would be very convenient. Additionally, this concept could be expanded to not only search reddit, but also numerous other sources. e.g. Youtube, News, Entertainment, recent scholarly articles, etc. And not only to store the knowledge found for later access by a user, but also provide spontaneous messages to its user regarding recent trends that the owner may be interested in. e.g. Similar to personalized ads, but very different with a more helpful scope.
 
