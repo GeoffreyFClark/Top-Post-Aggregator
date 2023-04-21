@@ -6,7 +6,7 @@ Automate the screening of filler words such as "the" and "a".
 
 AI/ML to summarize overarching trends on Reddit + report HOT-TREND headlines to humans. 
 
-Then expand to other ever increasing sources of information and ability to provide spontaneous, pertinent, personalized messages to the user.
+Then add the ability to provide spontaneous, pertinent, personalized messages to the user. And expand to increasing sources of information.
 
 ## UseCase Example: 
 I bought a new macbook, they are not #1 for gaming, but they are absolutely excellent for productivity.
