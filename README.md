@@ -13,7 +13,7 @@ I bought a new macbook, they are not #1 for gaming, but they are absolutely exce
 I also simply found it to have the most upbeat environment of the top 3 operating systems.
 Anyway, upon receiving it from Amazon, I immediately upgraded to the newest macOS **Ventura** 13.X from macOS **Monterey** 12.X.
 Then I read up on the mac subreddit on how to optimally utilize my new 2022 M2 Macbook Air.
-**The comments on reddit are mostly that Ventura is a s#^tshow.**
+**The comments on reddit are mostly that Ventura currently has some bugs that didn't exist in Monterey.**
 I wish that I'd known that before "upgrading" the OS lol.
 *Cue helpful AI buddy who has the ability to provide spontaneous, pertinent, personalized messages.*
 
