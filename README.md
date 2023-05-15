@@ -1,4 +1,4 @@
-I wrote these scripts to webscrape HackerNews, StackOverflow, and CS subreddits to collect data in support a private group project. 
+I wrote these scripts to webscrape HackerNews, StackOverflow, and CS subreddits to collect data in support of a private group project. 
 
 <!---
 # TODO:
