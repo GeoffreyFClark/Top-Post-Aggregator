@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top Posts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 12px;
+            line-height: 1.2;
+            background-color: #cadfff;
+        }
+        
+        .columns {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .column {
+            flex: 1;
+            margin: 0 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        
+        h1 {
+            font-size: 1.2em;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        li:last-child {
+            border-bottom: none;
+        }
+        
+        strong {
+            color: #e44d26;
+        }
+        
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        select {
+            padding: 1px;
+        }
+
+        input[type="submit"] {
+            padding: 6px 12px;
+            background: #e44d26;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #d44126;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+        <select name="Timeframe">
+            <option value="day" {% if Timeframe == 'DAY' %} selected {% endif %}>Day</option>
+            <option value="week" {% if Timeframe == 'WEEK' %} selected {% endif %}>Week</option>
+            <option value="month" {% if Timeframe == 'MONTH' %} selected {% endif %}>Month</option>
+            <option value="year" {% if Timeframe == 'YEAR' %} selected {% endif %}>Year</option>
+        </select>        
+        <input type="submit" value="Timeframe">
+    </form>
+
+    <div class="columns">
+        <div class="column">
+            <h1>Top HackerNews Posts</h1>
+            <ul>
+                {% for post in hn_posts %}
+                    <li>
+                        <strong>{{ post['points'] }} Points</strong> | 
+                        <a href="{{ post['link'] }}" target="_blank">{{ post['title'] }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="column">
+            <h1>Top r/programming Posts</h1>
+            <ul>
+                {% for post in programming_posts %}
+                    <li>
+                        <strong>{{ post['points'] }} Points</strong> | 
+                        <a href="{{ post['link'] }}" target="_blank">{{ post['title'] }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="column">
+            <h1>Top r/learnprogramming Posts</h1>
+            <ul>
+                {% for post in learnprogramming_posts %}
+                    <li>
+                        <strong>{{ post['points'] }} Points</strong> | 
+                        <a href="{{ post['link'] }}" target="_blank">{{ post['title'] }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

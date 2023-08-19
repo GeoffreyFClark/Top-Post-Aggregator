@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top Posts</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <select name="timeline">
+            <option value="day" {% if timeline == 'DAY' %} selected {% endif %}>Day</option>
+            <option value="week" {% if timeline == 'WEEK' %} selected {% endif %}>Week</option>
+            <option value="month" {% if timeline == 'MONTH' %} selected {% endif %}>Month</option>
+            <option value="year" {% if timeline == 'YEAR' %} selected {% endif %}>Year</option>
+        </select>        
+        <input type="submit" value="Timeline">
+    </form>
+
+    <h1>Top HackerNews Posts</h1>
+    <ul>
+        {% for post in hn_posts %}
+            <li>
+                <strong>{{ post['points'] }} Points</strong> | 
+                <a href="{{ post['link'] }}" target="_blank">{{ post['title'] }}</a> | 
+                {{ post['date_posted'] }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h1>Top r/programming Posts</h1>
+    <ul>
+        {% for post in programming_posts %}
+            <li>
+                <strong>{{ post['points'] }} Points</strong> | 
+                <a href="{{ post['link'] }}" target="_blank">{{ post['title'] }}</a> | 
+                {{ post['date_posted'] }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h1>Top r/learnprogramming Posts</h1>
+    <ul>
+        {% for post in learnprogramming_posts %}
+            <li>
+                <strong>{{ post['points'] }} Points</strong> | 
+                <a href="{{ post['link'] }}" target="_blank">{{ post['title'] }}</a> | 
+                {{ post['date_posted'] }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
