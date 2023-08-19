@@ -9,7 +9,7 @@ Technologies Used:
 - SQLite
 - Flask
 
-To use this application, copy the code, install the required packages using `pip install -r requirements.txt`, and run `python main.py` to view in a web browser at http://127.0.0.1:5000/.
+Usage: Copy the code, install the required packages using `pip install -r requirements.txt`, and simply run `python main.py` to view in a web browser at http://127.0.0.1:5000/.
 
 ![Frontend example](templates/frontend.png)
 
