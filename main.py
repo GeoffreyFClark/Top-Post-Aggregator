@@ -169,4 +169,4 @@ def main(timeframe='day'):
     # View in browser at http://127.0.0.1:5000/
 
 if __name__ == "__main__":
-    subprocess.Popen(["python", "front_end.py"], shell=True)
+    subprocess.Popen(["python", "render_frontend.py"], shell=True)
