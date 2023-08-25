@@ -1,4 +1,4 @@
-This web application's backend uses Python, Requests, and BeautifulSoup to scrape top posts from HackerNews, r/Programming, and r/LearnProgramming into an SQLite database for each source based on a user-selected timeframe. These top posts are then displayed in a consolidated manner using HTML/CSS in a Flask frontend.
+This web application uses Python, Requests, and BeautifulSoup to scrape top posts from HackerNews, r/Programming, and r/LearnProgramming into an SQLite database for each source based on a user-selected timeframe. These top posts are then displayed in a consolidated manner using HTML/CSS served with Flask.
 
 Technologies Used: 
 - Python 
@@ -13,5 +13,5 @@ Usage: Copy the code, install the required packages using `pip install -r requir
 
 ![Frontend example](templates/frontend.png)
 
-Updated with CSS and removed all datetimes for a more modern look:
+Updated with embedded CSS and removed all datetimes for a more modern look:
 ![Frontend example](templates/frontend_CSS.png)
